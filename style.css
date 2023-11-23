@@ -66,7 +66,7 @@ p{
     font-size: 13px;
     color: var(--light-grayish-blue);
 }
-.toggle {
+.toggle-div {
     width: 45px;
     height: 25px;
     margin: 0 20px;
@@ -75,6 +75,7 @@ p{
     background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%)) ;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .toggle-in {
     width: 20px;
@@ -86,6 +87,10 @@ p{
     cursor: pointer;
 }
 
+.active {
+    position: absolute;
+    right: 2px;
+}
 
 section {
     width: 100%;
@@ -210,7 +215,7 @@ button:hover {
     p{
         font-size: 15px;
     }
-    .toggle {
+    .toggle-div {
         width: 50px;
         height: 30px;
         margin: 0 25px;
